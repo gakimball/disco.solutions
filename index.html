@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>d i s c o s o l u t i o n s</title>
+    <style>
+      @keyframes colors {
+        0% {
+          background: red;
+        }
+
+        20% {
+          background: orange;
+        }
+
+        40% {
+          background: yellow;
+        }
+
+        60% {
+          background: green;
+        }
+
+        80% {
+          background: blue;
+        }
+
+        100% {
+          background: red;
+        }
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        animation: colors 5s infinite;
+      }
+
+      .disco {
+        text-align: center;
+        line-height: 100vh;
+        font-size: 100px;
+        font-weight: bold;
+        color: white;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="disco">
+      <a href="https://www.youtube.com/watch?v=KNi8aW8Nf6s" target="_blank">Disco Solutions</a>
+    </h1>
+
+    <script>
+      var text = 'discosolutions';
+      var i = 0;
+
+      window.setInterval(function() {
+        document.title = text[i] + ' ' + (text[i + 1] || '') + ' ' + (text[i + 2] || '');
+        i++;
+        if (i === text.length) i = 0;
+      }, 250);
+    </script>
+  </body>
+</html>
